@@ -35,6 +35,8 @@ p,a {
     font-size: 20px;
 }
 
+p.one {color: blue;}
+
 ul { 
 	position: relative; 
 	display: inline-block; 
@@ -43,3 +45,11 @@ ul {
 	transform: translateX(-50%);
     color: antiquewhite; 
 } 
+
+img{ margin-bottom: 10px;}
+
+li.one {
+border-style: dotted; border-color: red;border-width: 4px;}
+
+li.three{ border-style:dotted ;border-color: red; border-width: 4px;}
+
