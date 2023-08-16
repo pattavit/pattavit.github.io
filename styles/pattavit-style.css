@@ -16,6 +16,7 @@ img {
     text-align: center;
     display: block;
     margin: 0 auto;
+    margin-bottom: 10px;
 
 }
 
@@ -46,7 +47,6 @@ ul {
     color: antiquewhite; 
 } 
 
-img{ margin-bottom: 10px;}
 
 li.one {
 border-style: dotted; border-color: red;border-width: 4px;}
