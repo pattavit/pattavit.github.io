@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattavit Seanchot 643040233-3</title>
+    <style>
+        div {
+            background-color: blue;
+            height: 100px;
+            width: 25%;
+            float: left;
+            margin: 5px 0px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const random = () =>
+            "rgb(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + ")";
+
+        const divs = [];
+
+        for (var i = 0; i < 16; i++) {
+            var myDiv = document.createElement('div');
+            document.body.appendChild(myDiv);
+            divs.push(myDiv);
+        }
+
+        divs.forEach((div, index) => {
+            if (index % 4 === 1 || index % 4 === 3) {
+                div.onclick = (e) => {
+                    if (div.getAttribute("clicked") !== "true") {
+                        div.style.backgroundColor = "yellow";
+                        div.setAttribute("clicked", "true");
+                    }
+                };
+            } else {
+                div.onclick = (e) => {
+                    div.style.backgroundColor = random();
+                };
+            }
+        });
+    </script>
+</body>
+</html>
